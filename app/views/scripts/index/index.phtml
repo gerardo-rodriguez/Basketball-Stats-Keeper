@@ -1,0 +1,25 @@
+<h2>Welcome to Stat Tabs!</h2>
+<div class="formContainer">
+	<form action="/" method="post">
+		<legend>Login to access your Stat Tabs</legend>
+	
+		<?php
+			if( !empty($this->validationErrors) )
+			{
+				echo "<p>There were the following errors in your submission:</p>";
+				echo "<ul class='errors'>";
+				foreach( $this->validationErrors as $error )
+				{
+					echo "<li>" . $error . "</li>";
+				}
+				echo "</ul>";
+			} 
+		?>
+
+		<label for="username">Username:</label><input type="text" name="username" value="<?php echo (isset($_POST['username'])) ? $_POST['username'] :"" ?>" id="username" />
+		<label for="password">Password:</label><input type="password" name="password" value="" id="password" />
+
+		<button type="submit" name="submit">Login</button>
+	</form>
+	<p><a href="/createaccount">Create new account</a></p>
+</div>

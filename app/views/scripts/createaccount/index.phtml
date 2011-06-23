@@ -1,0 +1,28 @@
+<h2>New Account Creation</h2>
+<div class="formContainer">
+	<form action="/createaccount" method="post">
+		<legend>Enter your information to create a new account</legend>
+		<?php
+			if( !empty($this->validationErrors) )
+			{
+				echo "<p>There were the following errors in your submission:</p>";
+				echo "<ul>";
+				foreach( $this->validationErrors as $error )
+				{
+					echo "<li>" . $error . "</li>";
+				}
+				echo "</ul>";
+			} 
+		?>
+		<label for="first_name">First Name:</label><input type="text" name="first_name" value="<?php echo (isset($_POST['first_name'])) ? $_POST['first_name'] :"" ?>" id="first_name" />
+		<label for="last_name">Last Name:</label><input type="text" name="last_name" value="<?php echo (isset($_POST['last_name'])) ? $_POST['last_name'] :"" ?>" id="last_name" />
+		<label for="email">Email:</label><input type="text" name="email" value="<?php echo (isset($_POST['email'])) ? $_POST['email'] :"" ?>" id="email" />
+		<label for="username">Username:</label><input type="text" name="username" value="<?php echo (isset($_POST['username'])) ? $_POST['username'] :"" ?>" id="username" />
+		<label for="password">Password:</label><input type="password" name="password" value="" id="password" />
+		<label for="password_verify">Verify Password:</label><input type="password" name="password_verify" value="" id="password_verify" />
+		
+	
+		<button type="submit" name="submit">Create My Account</button>
+	</form>
+	<p><a href="/">I already have an account</a></p>
+</div>
