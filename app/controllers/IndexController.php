@@ -35,70 +35,64 @@
 		
 		public function indexAction()
 		{
-			$db = $this->usersModel->getDefaultAdapter();
-			$select = $db->select()->where('username = ?', 'test');
-			var_dump( $select->__toString() );
-			$data = $db->fetchAll($select);
-			var_dump($data);
-			
-//			var_dump( $this->usersModel->validateUsername('test') );
-
-			// if( isset($this->userSession->userID) )
-			// {
-			// 	echo "userID: " . $this->userSession->userID;
-			// 	/* redirect to dashboard page */
-			// }
+			if( isset($this->userSession->userID) )
+			{
+				echo "userID: " . $this->userSession->userID;
+				/* redirect to dashboard page */
+				header("Location: dashboard/");
+			}
 			
 			// if( !empty($this->userSession->validationErrors) ) $this->view->validationErrors = $this->userSession->validationErrors;
-			// if( !empty($_POST) && isset($_POST['submit']) )
-			// {
-			// 	/* Grab our POST variables */
-			// 	$username = $_POST['username'];
-			// 	$password = $_POST['password'];
-			// 	
-			// 	/* Validate */
-			// 	$this->validate->notEmpty('Username', $username);
-			// 	$this->validate->notEmpty('Password', $password);
-			// 	
-			// 	/* Check for validation errors */
-			// 	if (count($this->validate->errors)) {
-			// 		$this->view->validationErrors = $this->validate->errors;
-			// 		//header("Location: /");
-			// 	} else {
-			// 		/* Let's encrypt the password */
-			// 		$encry = array($password, $username);
-			// 		$encryptedPassword = $this->userHelper->encryptLogin( $encry );
-			// 		
-			// 		/* Package our arguments */
-			// 		$arguments = array(
-			// 			'username' => $username,
-			// 			'password' => $encryptedPassword
-			// 		);
-			// 
-			// 		if( $user )
-			// 		{
-			// 			echo 'found username';
-			// 			if( $encryptedPassword == $user['password'] )
-			// 			{
-			// 				die('::match password');
-			// 			}
-			// 			else
-			// 			{
-			// 				die('::no match pwd');
-			// 			}
-			// 		}
-			// 		else
-			// 		{
-			// 			die('username not found');
-			// 		}
-			// 	}
-			// 	
-			// }
+			
+			
+			if( !empty($_POST) && isset($_POST['submit']) )
+			{
+				/* Grab our POST variables */
+				$username = $_POST['username'];
+				$password = $_POST['password'];
+				
+				/* Validate */
+				$this->validate->notEmpty('Username', $username);
+				$this->validate->notEmpty('Password', $password);
+				
+				/* Check for validation errors */
+				if (count($this->validate->errors)) {
+					$this->view->validationErrors = $this->validate->errors;
+				} else {
+					/* Let's encrypt the password */
+					$encry = array($password, $username);
+					$encryptedPassword = $this->userHelper->encryptLogin( $encry );
+					
+					/* Grab the user from our db */
+					$user = $this->usersModel->fetchRow( $this->usersModel->select()->where('username = ?', $username) );
+			
+					if( $user )
+					{
+						if( $encryptedPassword == $user['password'] )
+						{
+							/* redirect to dashboard page */
+							header("Location: dashboard/");
+						}
+						else
+						{
+							$this->validate->addError('passwordMismatch','Your password is incorrect.');
+						}
+					}
+					else
+					{
+						$this->validate->addError('userNotFound','Your username was not found. Please create a new account or try again.');
+					}
+					if (count($this->validate->errors)) {
+						$this->view->validationErrors = $this->validate->errors;
+					}
+				}
+				
+			}
 		}
 		
-		public function loginAction()
+		public function logoutAction()
 		{
-			// die( var_dump($_POST) );
+			die('logging out');
 		}
 	}
 	
