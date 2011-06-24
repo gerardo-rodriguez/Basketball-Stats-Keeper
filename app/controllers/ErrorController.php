@@ -11,7 +11,7 @@
 		public function errorAction()
 		{
 			$error = $this->_getParam('error_handler');
-			echo ($error->exception->getMessage());
+//			echo ($error->exception->getMessage());
 		    switch($error->type) {
 		      case 'EXCEPTION_OTHER':
 		        switch($error->exception->getMessage()) {
