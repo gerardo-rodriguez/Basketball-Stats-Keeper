@@ -42,9 +42,6 @@
 				header("Location: dashboard/");
 			}
 			
-			// if( !empty($this->userSession->validationErrors) ) $this->view->validationErrors = $this->userSession->validationErrors;
-			
-			
 			if( !empty($_POST) && isset($_POST['submit']) )
 			{
 				/* Grab our POST variables */
@@ -70,6 +67,8 @@
 					{
 						if( $encryptedPassword == $user['password'] )
 						{
+							/* store the user id in session */
+							$this->userSession->userID = $user['id'];
 							/* redirect to dashboard page */
 							header("Location: dashboard/");
 						}
