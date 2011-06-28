@@ -1,0 +1,120 @@
+/* CSS 2.0 */
+
+html {
+	margin: 0px;
+}
+
+body {
+	margin: 0px;
+}
+
+/* Header
+-----------------------------------------------------------------------*/
+
+#header {
+	background-color: #006699;
+	color: #ffffff;
+	height: 100px;
+	padding-left: 4%;
+	margin: 0px;
+	display: block;
+}
+ 
+#header #title {
+	height: 100px;
+	width: 600px;
+	display: block;
+	float: left;
+	line-height: 100px;
+}
+
+#header #login {
+	width: 300px;
+	display: block;
+	float: left;
+	background-color: #BFD5F1;
+	border: 2px solid #00486C;
+	height: 60px;
+	margin-top: 19px;
+	padding: 3px;
+	color: #000000;
+}
+
+h1 {
+	font-family: Arial;
+}
+
+/* Navigation Top
+-----------------------------------------------------------------------*/
+
+#topnav {
+	clear: both;
+	background-color: #00486C;
+	color: #333333;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 4%;
+	margin: 0px;
+	display: block;
+}
+
+#topnav ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+#topnav li {
+	float: left;
+	display: block;
+	padding-right: 15px;
+}
+
+#topnav a {
+	color: #ffff99;
+	text-decoration: none;
+}
+
+#topnav a:hover {
+	text-decoration: underline;
+}
+
+/*Content
+-----------------------------------------------------------------------*/
+
+#content {
+	margin-left: 4%;
+	width: 92%;
+	background-color: #98BFF1;
+	height: 100%;
+}
+
+#contentPadding {
+	padding: 10px;
+}
+
+/* Footer 
+-----------------------------------------------------------------------*/
+
+#footer {
+	color: #ffffff;
+	clear: both;
+	background-color: #00486C;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 4%;
+	padding-right: 6%;
+	margin: 0px;
+	display: block;
+	text-align: right;
+	
+}
+
+#footer a {
+	color: #ffffff;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+}

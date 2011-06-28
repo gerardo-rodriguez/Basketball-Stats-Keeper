@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html charset=utf-8"/>
+
+	<title>WebINK</title>
+	<!-- CSS -->
+	<link type="text/css" rel="stylesheet" href="css/reset-min.css" media="all" />
+	<link type="text/css" rel="stylesheet" href="css/coda-slider/coda-slider-2.0.min.css" media="all" />
+	<link type="text/css" rel="stylesheet" href="css/lava_nav.min.css" media="all" />
+	<link type="text/css" rel="stylesheet" href="css/colorbox.min.css" media="all" />
+	<link type="text/css" rel="stylesheet" href="css/master.min.css" media="all" />
+	<link type="text/css" rel="stylesheet" href="css/landing.min.css" media="all" />
+	<!--[if lte IE 7]>
+	<link type="text/css" rel="stylesheet" href="css/ie.css" media="all" />
+	<![endif]-->
+	<!-- Libraries -->
+	<script src="js/libraries/jquery-1.4.2.min.js" type="text/javascript"></script>
+	<script src="js/libraries/jquery-ui-1.8.custom.min.js" type="text/javascript"></script>
+	<script src="js/libraries/jquery.hoverIntent.minified.js" type="text/javascript"></script>
+	<script src="js/libraries/jquery.coda-slider-2.0.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="js/libraries/jquery.lavalamp.custom.min.js"></script>
+	<script type="text/javascript" src="js/libraries/jquery.autoresize.min.js"></script>
+	<script src="js/libraries/jquery.colorbox-min.js" type="text/javascript"></script>
+	<!-- Classes -->
+	<script src="js/controllers/WidgetFontPickerController.class.min.js" type="text/javascript"></script>
+	<script src="js/controllers/FontFaceAppController.class.min.js" type="text/javascript"></script>
+	<script src="js/controllers/UIController.class.min.js" type="text/javascript"></script>
+	<script src="js/models/AjaxAmbassadorModel.class.min.js" type="text/javascript"></script>
+	<script src="js/views/ProcessDataView.class.min.js" type="text/javascript"></script>
+	<!-- Scripts -->
+	<script src="js/scripts/fontFaceApp.min.js" type="text/javascript"></script>
+	<!-- Dynamically generated CSS -->
+	<style type="text/css" media="all"></style>
+</head>
+
+<body class="landingPage" id="landingPage">
+	<div id="headerWrapper">
+		<div class="contentContainer">
+			<h1><a href="index.html" title="WebINK homepage"><img src="img/WebINKLogo.png" width="122" height="34" alt="WebINK" /></a><span>Perfect typography. Online.</span></h1>
+			
+			<!-- Primary Nav -->
+			<div class="primaryNavContainer">
+				<ul id="primaryNav" class="animatedNav">
+					<li><a href="#">My Type Drawers</a></li>
+					<li><a href="#">My Account</a></li>
+					<li><a href="#">Logout</a></li>
+				</ul>
+			</div>
+			<!-- Primary Nav End -->
+
+			<!-- Secondary Nav -->
+			<div class="secondaryNavContainer">
+				<ul id="secondaryNav" class="animatedNav">
+					<li>
+						<a href="whatItIs/ease.html" title="What It Is">What It Is</a>
+						<div class="megaMenu">
+							<ul class="megaMenuTabs">
+								<li>
+									<a class="whatItIs_ease-html" title="Ease" href="#megaMenuInfo_1">Ease</a>
+								</li>
+								<li>
+									<a class="whatItIs_quality-html" title="Quality" href="#megaMenuInfo_2">Quality</a>
+								</li>
+								<li>
+									<a class="whatItIs_reliability-html" title="Reliability" href="#megaMenuInfo_3">Reliability</a>
+								</li>
+								<li>
+									<a class="whatItIs_foundries-html" title="Foundries" href="#megaMenuInfo_4">Foundries</a>
+								</li>
+							</ul>
+							<div id="megaMenuInfo_1">
+								<p><strong>WebINK is easy to use</strong> From the preview process to renting, implementing and managing your chosen fonts.</p>
+							</div>
+							<div id="megaMenuInfo_2">
+								<p><strong>WebINK is high-quality fonts for the Web.</strong> Our wide selection has been vetted by experts (a.k.a. type geeks).</p>
+							</div>
+							<div id="megaMenuInfo_3">
+								<p><strong>WebINK is reliable.</strong> Our font delivery service is backed by tons of expertise and an always-on global network.</p>
+							</div>
+							<div id="megaMenuInfo_4">
+								<p><strong>WebINK is your connection to the best foundries.</strong> We&rsquo;ll help you easily&mdash;and legally&mdash;bring their fonts online.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="howItWorks/quickGuide.html" title="How It Works">How It Works</a>
+						<div class="megaMenu">
+							<ul class="megaMenuTabs">
+								<li>
+									<a class="howItWorks_quickGuide-html" title="Quick Guide" href="#megaMenuInfo_6">Quick Guide</a>
+								</li>
+								<li>
+									<a class="howItWorks_faq-html" title="FAQ" href="#megaMenuInfo_7">FAQ</a>
+								</li>
+								<li>
+									<a class="howItWorks_videoInstructions-html" title="Video Instructions" href="#megaMenuInfo_8">Video Instructions</a>
+								</li>
+								<li>
+									<a class="howItWorks_liveExamples-html" title="Live Examples" href="#megaMenuInfo_9">Live Examples</a>
+								</li>
+							</ul>
+							<div id="megaMenuInfo_6">
+								<p><strong>Review our quick guide</strong> to see the easy steps you&rsquo;ll take to use WebINK and implement our fonts on your sites.</p>
+							</div>
+							<div id="megaMenuInfo_7">
+								<p><strong>WebINK is different</strong> than what you&rsquo;re used to, and that&rsquo;s sure to bring up questions. Here are some answers.</p>
+							</div>
+							<div id="megaMenuInfo_8">
+								<p><strong>For all you visual learners</strong> (and we&rsquo;re guessing that&rsquo;s a lot of you), see our video demos of WebINK in action.</p>
+							</div>
+							<div id="megaMenuInfo_9">
+								<p><strong>WebINK is not a theory</strong> or an untested experiment. See how designers are already using WebINK for their clients.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="exploreFonts/" title="Explore Fonts">Explore Fonts</a>
+						<div class="megaMenu">
+							<ul class="megaMenuTabs">
+								<li>
+									<a class="exploreFonts_" title="WebINK Libraries" href="#megaMenuInfo_10">WebINK Libraries</a>
+								</li>
+							</ul>
+							<div id="megaMenuInfo_10">
+								<p><strong>This is it, kids:</strong> where all the fun happens. Search, discover, compare, save and play with the web fonts we offer.</p>
+							</div>
+						</div>
+					</li>
+					<li>
+						<a href="pricing/" title="Pricing">Pricing</a>
+						<div class="megaMenu">
+							<ul class="megaMenuTabs">
+								<li>
+									<a class="pricing_" title="Price Tiers" href="#megaMenuInfo_11">Price Tiers</a>
+								</li>
+							</ul>
+							<div id="megaMenuInfo_11">
+								<p><strong>Did you know your first 30 days are free?</strong> Well, you do now. After that we offer various affordable pricing options.</p>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!-- Secondary Nav End -->
+
+<!--
+			<ul id="socialNav">
+				<li class="twitter"><a href="#">Twitter</a></li>
+				<li class="facebook"><a href="#">Facebook</a></li>
+			</ul>
+-->
+			<br class="clearBoth" />
+		</div>
+	</div>
+	
+	<div id="heroWrapper">
+		<div class="contentContainer">
+			<div class="insideContainer">
+				
+				<!-- Font Choosing Widget -->
+				<div id="fontPicker" class="widgetFontPicker">
+					<h4>Select a font below</h4>
+					<ul>
+						<li class="blueJackMed">
+							<span class="fontPreview">Abg123</span>
+							<span class="fontTitle">Blue Jack URW Med</span>
+						</li>
+						<li class="murrayHillD">
+							<span class="fontPreview">Abg123</span>
+							<span class="fontTitle">Murray Hill D</span>
+						</li>
+						<li class="breeWebBold">
+							<span class="fontPreview">Abg123</span>
+							<span class="fontTitle">Bree Web-Bold</span>
+						</li>
+						<li class="coquetteBold">
+							<span class="fontPreview">Abg123</span>
+							<span class="fontTitle">Coquette Bold</span>
+						</li>
+						<li class="revue">
+							<span class="fontPreview">Abg123</span>
+							<span class="fontTitle">Revue</span>
+						</li>
+						<li class="apollineStdDemi">
+							<span class="fontPreview">Abg123</span>
+							<span class="fontTitle">ApollineStd-Demi</span>
+						</li>
+						<li class="museoSlab500">
+							<span class="fontPreview">Abg123</span>
+							<span class="fontTitle">MuseoSlab-500</span>
+						</li>
+						<li class="urwGroteskNar">
+							<span class="fontPreview">Abg123</span>
+							<span class="fontTitle">Grotesk</span>
+						</li>
+						<li class="phillySpoScrD">
+							<span class="fontPreview">Abg123</span>
+							<span class="fontTitle">PhillySpoScrD</span>
+						</li>
+						<li class="kandalBlack">
+							<span class="fontPreview">Abg123</span>
+							<span class="fontTitle">KandalBlack</span>
+						</li>
+					</ul>
+
+				</div>
+				<!-- Font Choosing Widget End -->
+					
+				<div class="previewContainer blueJackMed">
+					<h1>Web fonts.</h1>
+					<a href="#" class="pickFont">edit button</a>
+				</div>
+
+				<div class="previewContainer blueJackMed">
+					<h2>Let the games begin.</h2>
+					<a href="#" class="pickFont">edit button</a>
+				</div>
+
+				<div id="initialCopy" class="previewContainer urwGroteskNar">
+					<p>WebINK is your single source for professional, high&ndash;quality web fonts. Its affordable and easy&ndash;to&ndash;use font delivery service provides fonts for the websites you design, and it does so quick as a WINK. It also gives you the freedom to use the best fonts&mdash;rather than the snoresville defaults&mdash;in your creations. It&rsquo;s type the way you want it. Type the way you meant it to be. <a class="extraContentLink" href="#">This or That?</a></p>
+					<a href="#" class="pickFont">edit button</a>
+				</div>
+
+				<div id="thisOrThatContainer">
+					<p>It&rsquo;s time to be blunt about the world you&rsquo;ve been designing in. The Web hasn&rsquo;t been all that accommodating to great typography. You&rsquo;ve basically had three choices. One: do what you can with the ten standard Web-safe fonts (yawn). Two: Treat certain text elements as images (whoops, the text is no longer searchable). Three: employ a hack or workaround (a poor-quality last resort).</p>
+		 			<p>Now, there&rsquo;s fourth choice&mdash;a typography option that&rsquo;s finally worthy of your web designs. This option is WebINK. With WebINK, type works with your design instead of against it. Possibilities you once barely entertained are now a breeze to execute. </p>
+					<p>For nearly two decades, the Extensis team has been helping design professionals manage fonts, and now we&rsquo;re taking our typographic expertise online with WebINK. As we&rsquo;ve already noted, it&rsquo;s easy to use and offers only the highest quality fonts. But it also provides the reliable, fast and standards-compliant web font solution you&rsquo;ve been missing.</p>
+					<p class="highlight">Welcome to WebINK. <a href="exploreFonts/">Now, go play.</a></p>
+					<p id="closeHeroLink">[ <a href="#">Close</a> ]</p>
+				</div>
+			
+				<a href="exploreFonts/" id="moreButton"><span>Try It Now!</span></a>
+			</div>
+		</div>
+		<div class="heroShadow">&nbsp;</div>
+	</div>
+	<div id="contentBannerWrapper">
+		<div class="contentContainer">
+			<div class="coda-slider-wrapper">
+				<div class="coda-slider preload">
+					<div class="panel">
+						<div class="panel-wrapper cssVisual">
+							<h3 class="title">As simple as CSS</h3>
+							<p>You don&rsquo;t need JavaScript&trade; or Flash&reg; to get the fonts you want&mdash;just indicate your font choices with the @font&ndash;face tag.</p>
+							<p><a href="whatItIs/ease.html">Learn More &raquo;</a></p>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-wrapper goodiesVisual">
+							<h3 class="title">Handpicked goodies</h3>
+							<p>Not all fonts are rockstar&ndash;quality. We&rsquo;ve vetted the fonts we offer&mdash;so you don&rsquo;t have to.</p>
+							<p><a href="whatItIs/quality.html">Learn More &raquo;</a></p>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-wrapper tryOutVisual">
+							<h3 class="title">Free to try</h3>
+							<p>Get your first month free&mdash;with any fonts, any site, and any traffic volume. It&rsquo;s free, free and free.</p>
+							<p><a href="pricing/">Learn More &raquo;</a></p>
+						</div>
+					</div>
+
+					<!-- <div class="panel">
+						<div class="panel-wrapper">
+							<h3 class="title">The Fourth Slide</h3>
+							<p>The fourth slide content goes here. The fourth slide content goes here. The fourth slide content goes here. The fourth slide content goes here. The fourth slide content goes here.</p>
+							<p>The fourth slide content goes here. The fourth slide content goes here. The fourth slide content goes here. </p>
+							<p><a href="#">Learn More &raquo;</a></p>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-wrapper">
+							<h3 class="title">The Fifth Slide The Fifth Slide</h3>
+							<p>The fifth slide content goes here, yes indeed it does!</p>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-wrapper">
+							<h3 class="title">The 6th Slide The 6th Slide</h3>
+							<p>The 6th slide content goes here, yes indeed it does!</p>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-wrapper">
+							<h3 class="title">The 7th Slide</h3>
+							<p>The 7th slide content goes here.</p>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-wrapper">
+							<h3 class="title">The 8th Slide The 8th Slide</h3>
+							<p>The 8th slide content goes here, yes indeed it does!</p>
+						</div>
+					</div>
+					<div class="panel">
+						<div class="panel-wrapper">
+							<h3 class="title">The LAST Slide The 9th Slide The LAST ONE</h3>
+							<p>The 9th slide content goes here, yes indeed it does!</p>
+						</div>
+					</div> -->
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="footerWrapper">
+		<div class="contentContainer">
+			<div class="leftCol">
+				<ul id="footerNav">
+					<li><a href="whatItIs/">What it is</a></li>
+					<li><a href="howItWorks">How it works</a></li>
+					<li><a href="exploreFonts">Explore fonts</a></li>
+					<li><a href="pricing">Pricing</a></li>
+					<li><a href="#">My type drawers</a></li>
+					<li><a href="#">My account</a></li>
+					<li><a href="#">Logout</a></li>
+					<li><a href="#">Privacy Policy</a></li>
+					<li class="last"><a href="#">Terms of use</a></li>
+				</ul>
+				<br class="clearBoth" />
+				<p>&copy; 2010 Extensis, a division of Celartem, Inc. All rights reserved.</p>
+				<p>1800 SW First Avenue, Suite 500, Portland, OR 97201 &mdash; (503) 274&ndash;2020<br />Registered in England and Wales under registration number 5801108</p>
+			</div>
+			<div class="rightCol">
+				<p>
+				<!-- Share This -->
+				<script type="text/javascript" src="http://w.sharethis.com/button/sharethis.js#publisher=beae19b8-bb11-4b64-b2f8-ac7decdda855&amp;type=website&amp;post_services=facebook%2Ctwitter"></script>
+				<!-- Share This-->
+				</p>
+				<div class="extensisLink">
+					<a href="#">
+						<img src="img/ExtensisLogo.png" width="66" height="40" alt="Extensis a celartem company" />
+					</a>
+					<ul class="extensisMenu">
+						<li>
+							<a href="#" title="Extensis Home">Extensis Home</a>
+						</li>
+						<li>
+							<a href="#" title="Products">Products</a>
+						</li>
+						<li>
+							<a href="#" title="Downloads">Downloads</a>
+						</li>
+						<li>
+							<a href="#" title="Support">Support</a>
+						</li>
+						<li>
+							<a href="#" title="Store">Store</a>
+						</li>
+						<li>
+							<a href="#" title="Communities">Communities</a>
+						</li>
+						<li>
+							<a href="#" title="Company">Company</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<br class="clearBoth" />
+		</div>
+	</div>
+</body>
+</html>

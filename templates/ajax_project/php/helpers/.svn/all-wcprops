@@ -1,0 +1,11 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/basketball-stats-keeper/!svn/ver/5/trunk/templates/ajax_project/php/helpers
+END
+DBConnect.class.php
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svn/basketball-stats-keeper/!svn/ver/5/trunk/templates/ajax_project/php/helpers/DBConnect.class.php
+END
