@@ -4,7 +4,7 @@
 
 	/**
 	 * IndexController
-	 * The controller for our index view.
+	 * The controller for our index view.  Dashboard at top of screen. :)
 	 * 
 	 * @author Gerardo Rodriguez <ger.rod34@gmail.com>
 	 * @var Zend_Session_Namespace $userSession Stores our Session Namespace.
